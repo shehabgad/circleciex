@@ -15,16 +15,16 @@ jobs:
       - run:
           name: frontend install packages
           command: |
-            npm --prefix ./reactnd-contacts-complete run install
+            npm --prefix ../reactnd-contacts-complete run install
       - run:
           name: backend install packages
           command: |
-            npm --prefix ./reactnd-contacts-server run install
+            npm --prefix ../reactnd-contacts-server run install
       - run:
           name: backend build
           command: |
-            npm --prefix ./reactnd-contacts-server run build
+            npm --prefix ../reactnd-contacts-server run build
       - run:
           name: frontend build
           command: |
-            npm --prefix ./reactnd-contacts-complete run build
+            npm --prefix ../reactnd-contacts-complete run build
